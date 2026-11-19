@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            flex-direction: column;
+            gap: 20px;
+            
+        }
+        header{
+            background-color: brown;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border-radius: 5px;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            
+
+        }
+         main div{
+            background-color: aqua;
+            margin: 5px;
+            padding: 5px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border-radius: 5px;
+        }
+        footer{
+            background-color: rgb(116, 148, 106);
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border-radius: 5px;
+        }
+
+        @media (min-width:600px) {
+            header{
+            background-color: brown;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border-radius: 5px;
+            }
+        main{
+            display: flex;
+            flex-direction: column;
+            
+
+        }
+         main div{
+            background-color: aqua;
+            margin: 10px;
+            padding: 5px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border-radius: 5px;
+        }
+        footer{
+            background-color: rgb(116, 148, 106);
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border-radius: 5px;
+        }
+        }
+        @media (min-width:600px  ) and (max-width:900px)  {
+             main{
+                display: flex;
+                flex-direction: row;
+                
+            }
+            main div{
+                width: 100%;
+            }
+        }
+        @media (min-width:900px) {
+            main{
+                display: flex;
+                flex-direction: row;
+                
+            }
+            main .main{
+                width: 65%;
+            }
+            main .sidebar{
+                width:35%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Responsive Header</header>
+    <main>
+        <div  class="main">Main Contant</div>
+        <div class="sidebar">Sidebar</div>
+    </main>
+    <footer>Fooder</footer>
+</body>
+</html>

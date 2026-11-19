@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background-color: #d3d3d3;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* 1. White box for @media only screen */
+.content {
+  background-color: #ffffff;
+  width: 85%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 2. Green box restricted by clamp() */
+.content.green-box {
+  background-color: #c6e600;
+  /* Width: Never smaller than 300px, 100% in between, never bigger than 800px */
+  width: clamp(300px, 100%, 800px);
+  height: 400px;
+}
+
+.big {
+  display: inline-block;
+  background-color: #8ce000;
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: sans-serif;
+  padding: 10px 20px;
+}
+
+.small {
+  display: none;
+  background-color: #f44336;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: sans-serif;
+  padding: 8px 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .big {
+    display: none;
+  }
+
+  .small {
+    display: inline-block;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="contant">
+            <span class="big">I am Big &#128515; !!</span>
+            <span class="small">I am small &#128515; !!</span>
+        </div>
+    </div>
+
+    <div class="wrapper">
+    <div class="content green-box">
+    </div>
+  </div>
+</body>
+</html>

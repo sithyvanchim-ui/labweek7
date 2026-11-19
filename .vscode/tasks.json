@@ -1,0 +1,18 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Serve lab website",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"-m",
+				"http.server",
+				"5500",
+				"--directory",
+				"D:\\Year2_SE_Term1\\Web_Design(UXUI HTML CSS JS)\\week7\\lab-week7"
+			],
+			"isBackground": true
+		}
+	]
+}

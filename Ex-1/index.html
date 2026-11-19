@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        .cover{
+            display:grid ;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+           
+
+        }
+
+        .cover div{
+            background-color: aquamarine;
+            height: 50px;
+            text-align: center;
+            padding-top:25px;
+            color: blueviolet;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+
+        }
+       @media  (max-width:1000px) {
+        .cover{
+            grid-template-columns: repeat(3, 1fr);
+        }
+       }
+       @media (max-width:768px) {
+        .cover{
+            grid-template-columns: repeat(2, 1fr);
+        }
+       }
+       @media (max-width:480px) {
+        .cover{
+           grid-template-columns: repeat(1, 1fr);
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <div>Item 1</div>
+        <div>item 2</div>
+        <div>item 3</div>
+        <div>item 4</div>
+        <div>item 5</div>
+        <div>item 6</div>
+        <div>item 7</div>
+        <div>item 8</div>
+    </div>
+</body>
+</html>
